@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streamheading - Сервис по накрутке твича</title>
+</head>
+<body>
+     
+
+    <header>
+        <div class="header_container">
+            <div class="menu_button" onclick="copyToken()">
+                <div class="menu_content">
+                    <svg width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path fill="#fff" d="M208 0L332.1 0c12.7 0 24.9 5.1 33.9 14.1l67.9 67.9c9 9 14.1 21.2 14.1 33.9L448 336c0 26.5-21.5 48-48 48l-192 0c-26.5 0-48-21.5-48-48l0-288c0-26.5 21.5-48 48-48zM48 128l80 0 0 64-64 0 0 256 192 0 0-32 64 0 0 48c0 26.5-21.5 48-48 48L48 512c-26.5 0-48-21.5-48-48L0 176c0-26.5 21.5-48 48-48z"/>
+                    </svg>
+                    <p>
+                        Ваш токен
+                    </p>
+                </div>
+            </div>
+            
+            <script>
+            function copyToken() {
+                const token = "гоша пиздюк";  
+                navigator.clipboard.writeText(token)
+                    .then(() => alert("Токен скопирован!"))
+                    .catch(() => alert("Ошибка при копировании"));
+            }
+            </script>
+            
+            <div class="menu_payment">
+                <svg width="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path fill="#fff" d="M64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-224c0-35.3-28.7-64-64-64L80 128c-8.8 0-16-7.2-16-16s7.2-16 16-16l368 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L64 32zM416 272a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/>
+                </svg>
+                <p>
+                    0.00 ₽
+                    <span>
+                        <a href="#">
+                            Пополнить
+                        </a>
+                    </span>
+                </p>
+            </div>            
+        </div>
+        <div class="header_left">
+            <div class="menu_box">
+                <div class="menu_inside">
+                    <h1 class="menu_logo">
+                        Streamheading
+                    </h1>
+                    <ul class="header_menu">
+                        <li>
+                            <a class="menu_link" href="#Services">
+                                Главная
+                            </a>
+                        </li>
+                        <li>
+                            <a class="menu_link" href="#about">
+                                История заказов
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu_inside">
+                    <a class="menu_out" href="/">
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.7031 18.0094C17.6672 16.2094 15.7219 15 13.5 15H10.5C8.27812 15 6.33281 16.2094 5.29688 18.0094C6.94688 19.8469 9.3375 21 12 21C14.6625 21 17.0531 19.8422 18.7031 18.0094ZM0 12C0 8.8174 1.26428 5.76516 3.51472 3.51472C5.76516 1.26428 8.8174 0 12 0C15.1826 0 18.2348 1.26428 20.4853 3.51472C22.7357 5.76516 24 8.8174 24 12C24 15.1826 22.7357 18.2348 20.4853 20.4853C18.2348 22.7357 15.1826 24 12 24C8.8174 24 5.76516 22.7357 3.51472 20.4853C1.26428 18.2348 0 15.1826 0 12ZM12 12.75C12.8951 12.75 13.7535 12.3944 14.3865 11.7615C15.0194 11.1285 15.375 10.2701 15.375 9.375C15.375 8.47989 15.0194 7.62145 14.3865 6.98851C13.7535 6.35558 12.8951 6 12 6C11.1049 6 10.2465 6.35558 9.61351 6.98851C8.98058 7.62145 8.625 8.47989 8.625 9.375C8.625 10.2701 8.98058 11.1285 9.61351 11.7615C10.2465 12.3944 11.1049 12.75 12 12.75Z" fill="white"/>
+                        </svg> 
+                        выйти
+                    </a>
+                </div>
+            </div>
+            <div class="services">
+                <div class="services_left">
+                    <h1 class="services_left_title">
+                        Приобрести услугу
+                    </h1>
+                    <button class="services_left_button">
+                        Twitch
+                    </button>
+                    <div class="services_col"></div>
+                    <div class="services_flex">
+                        <button class="services_flex_button services_flex_button_active">
+                            Зрители
+                        </button>
+                        <a href="views.html">
+                            <button class="services_flex_button">
+                                Просмотры клип
+                            </button>
+                        </a>
+                        <a href="chat-bot.html">
+                            <button class="services_flex_button">
+                                Чат боты
+                            </button>
+                        </a>
+                    </div>
+                    <div class="services_flex_bottom">
+                        <div class="services_left_inside">
+                            <p>Канал/ID *</p>
+                            <input class="services_left_inside_input" type="url" name="" id=""  required>
+                        </div>
+                        <div class="services_left_inside">
+                            <p>Количество</p>
+                            <input class="services_left_inside_input" type="number" name="" id="" value="1" placeholder="от 1 до 10000" required >
+                        </div>  
+                    </div>
+                    <div class="services_flex_bottom">
+                        <div class="services_left_inside">
+                            <p>Зрители в списке</p>
+                            <input class="services_left_inside_input" type="number" name="" id="" value="0" required>
+                        </div>
+                        <div class="services_left_inside">
+                            <p>Интервал</p>
+                            <input  class="services_left_inside_input" type="number" name="" id="" value="0.1"   required >
+                        </div>  
+                    </div>
+                    <div class="services_flex_bottom">
+                        <div class="services_left_inside ">
+                            <p>Период</p>
+                            <input class="services_input" type="number" name="" id="" value="0" required>
+                            <select class="services_input">
+                                <option value="">мин</option>
+                                <option value="">Час</option>
+                                <option value="">День</option>
+                                <option value="">Неделя</option>
+                                <option value="">Месяц</option>
+                            </select>
+                        </div>
+                        <div class="services_left_inside">
+                            <p>Чат аккаунты</p>
+                            <input class="services_left_inside_input" type="number" name="" id="" value="1" required >
+                        </div>  
+                    </div>
+                    <div class="payment_content">
+                        <h1 class="payment_title">
+                            twitch Зрители
+                        </h1>
+                        <div class="payment_line"></div>
+                        <div class="payment_flex">
+                            <p class="payment_paragraph">
+                                Количество:
+                            </p>
+                            <p class="payment_number">
+                                0.00 ₽
+                            </p>
+                        </div>
+                        <div class="payment_flex">
+                            <p class="payment_paragraph">
+                                Зрители в списке:
+                            </p>
+                            <p class="payment_number">
+                                0.00 ₽
+                            </p>
+                        </div>
+                        <div class="payment_flex">
+                            <p class="payment_paragraph">
+                                Интервал
+                            </p>
+                            <p class="payment_number">
+                                0.00 ₽
+                            </p>
+                        </div>
+                        <div class="payment_flex">
+                            <p class="payment_paragraph">
+                                чат панель:
+                            </p>
+                            <p class="payment_number">
+                                0.00 ₽
+                            </p>
+                        </div>
+                        <div class="payment_line"></div>
+                        <div class="payment_flex">
+                            <h1 class="payment_text">
+                                Итого:
+                            </h1>
+                            <h1 class="payment_price">
+                                0.00 ₽
+                            </h1>
+                        </div>
+                        <div class="payment_line"></div>
+                        <p class="payment_decription_title">
+                            Примечание:
+                        </p>
+                        <ul class="payment_decription">
+                            <li>Отменить заказ после приобретения нельзя.</li>
+                            <li>Запрещается отправлять сообщения без согласия владельца канала, оскорбления, ссылки, и любой текст нарушающий правила платформы. В случае нарушения данного правила, токен пользователя streamrise блокируется без права на разблокировку.</li>
+                            <li>Вам будет доступно 2 смены канала</li>
+                            <li>Вы сможете выбрать гео просмотров в редактировании заказа</li>
+                            <li>Большинство параметров заказа можно изменить после создания</li>
+                            <li>После покупки вам будут доступны функции: Плавающие зрители, ставки за баллы канала, участие в голосованиях.</li>
+                            <li>Чем больше рейдов в заказе, тем меньше цена за штуку. Смена цены по порогам: Рейды (5, 15, 50, 100, 200)</li>
+                            <li>В стоимость включены просмотры в статистику и на вод(запись стрима), в количестве 10шт за каждого зрителя в час, можно выбрать любое количество уникальных</li>
+                            <li>Время пойдет после начала первого стрима, и не остановится.</li>
+                            <li>После покупки вы сможете улучшить заказ на кнопку в строке заказа. Можно увеличить время заказа, количество зрителей и количество рейдов.</li>
+                        </ul>
+                        <button class="payment_button">
+                            Купить
+                        </button>
+                    </div>
+                </div>
+                <div class="services_right">
+                    <h1 class="services_right_title">
+                        Купленные услуги
+                    </h1>
+                    <div class="services_column_flex">
+                        <div class="services_column_inside">
+                            <a class="services_column_flex_a_active services_column_flex_a" href="#">Все</a>
+                            <a class="services_column_flex_a" href="#">Зрители</a>
+                            <a class="services_column_flex_a" href="#">Просмотры клип</a>
+                        </div>
+                        <div class="services_column_inside">
+                            <input type="search" name="" id="" placeholder="Поиск">
+                        </div>
+                    </div>
+                    <div class="services_line"></div>
+                    <div class="list_container">
+                        <p>Id</p>
+                        <p>Сервис</p>
+                        <p>Канал</p>
+                        <p>Интервал , сек</p>
+                        <p>Времени осталось</p>
+                        <p>Статус</p>
+                        <p>Зрители </p>
+                        <p>Состояние</p>
+                    </div>
+                    <div class="list_orders_container">
+                        <p>28374643</p>
+                        <p>Twitch | Зрители</p>
+                        <p>gay</p>
+                        <p>5</p>
+                        <p>00:00:59</p>
+                        <p>Онлайн</p>
+                        <p>0/5/5</p>
+                        <p><span>возобновлено</span></p>
+                    </div>
+                    <div class="services_column_flex">
+                        <div></div>
+                        <div class="services_svgs">
+                            <div id="iconToggle" onclick="toggleIcon()">
+                                <div id="svg1">
+                                    <button class="services_svg">
+                                        <svg id="svg1" width="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                            <path fill="#C563EC" d="M48 64C21.5 64 0 85.5 0 112L0 400c0 26.5 21.5 48 48 48l32 0c26.5 0 48-21.5 48-48l0-288c0-26.5-21.5-48-48-48L48 64zm192 0c-26.5 0-48 21.5-48 48l0 288c0 26.5 21.5 48 48 48l32 0c26.5 0 48-21.5 48-48l0-288c0-26.5-21.5-48-48-48l-32 0z"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div id="svg2" style="display: none;">
+                                    <button class="services_svg">
+                                        <svg width="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                            <path fill="#C563EC" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80L0 432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <button class="services_svg" onclick="toggleEdit()">
+                                <svg width="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path fill="#C563EC" d="M410.3 231l11.3-11.3-33.9-33.9-62.1-62.1L291.7 89.8l-11.3 11.3-22.6 22.6L58.6 322.9c-10.4 10.4-18 23.3-22.2 37.4L1 480.7c-2.5 8.4-.2 17.5 6.1 23.7s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L387.7 253.7 410.3 231zM160 399.4l-9.1 22.7c-4 3.1-8.5 5.4-13.3 6.9L59.4 452l23-78.1c1.4-4.9 3.8-9.4 6.9-13.3l22.7-9.1 0 32c0 8.8 7.2 16 16 16l32 0zM362.7 18.7L348.3 33.2 325.7 55.8 314.3 67.1l33.9 33.9 62.1 62.1 33.9 33.9 11.3-11.3 22.6-22.6 14.5-14.5c25-25 25-65.5 0-90.5L453.3 18.7c-25-25-65.5-25-90.5 0zm-47.4 168l-144 144c-6.2 6.2-16.4 6.2-22.6 0s-6.2-16.4 0-22.6l144-144c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6z"/>
+                                </svg>
+                            </button>
+                            <button class="services_svg">
+                                <svg width="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path fill="#C563EC" d="M135.2 17.7L128 32 32 32C14.3 32 0 46.3 0 64S14.3 96 32 96l384 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-96 0-7.2-14.3C307.4 6.8 296.3 0 284.2 0L163.8 0c-12.1 0-23.2 6.8-28.6 17.7zM416 128L32 128 53.2 467c1.6 25.3 22.6 45 47.9 45l245.8 0c25.3 0 46.3-19.7 47.9-45L416 128z"/>
+                                </svg>
+                            </button>
+                            <a href="bot.html">
+                                <button class="services_svg">
+                                    <svg width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                        <path fill="#C563EC" d="M320 0c17.7 0 32 14.3 32 32l0 64 120 0c39.8 0 72 32.2 72 72l0 272c0 39.8-32.2 72-72 72l-304 0c-39.8 0-72-32.2-72-72l0-272c0-39.8 32.2-72 72-72l120 0 0-64c0-17.7 14.3-32 32-32zM208 384c-8.8 0-16 7.2-16 16s7.2 16 16 16l32 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-32 0zm96 0c-8.8 0-16 7.2-16 16s7.2 16 16 16l32 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-32 0zm96 0c-8.8 0-16 7.2-16 16s7.2 16 16 16l32 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-32 0zM264 256a40 40 0 1 0 -80 0 40 40 0 1 0 80 0zm152 40a40 40 0 1 0 0-80 40 40 0 1 0 0 80zM48 224l16 0 0 192-16 0c-26.5 0-48-21.5-48-48l0-96c0-26.5 21.5-48 48-48zm544 0c26.5 0 48 21.5 48 48l0 96c0 26.5-21.5 48-48 48l-16 0 0-192 16 0z"/>
+                                    </svg>
+                                </button>
+                            </a>
+                            <button class="services_svg" onclick="toggleServices()">
+                                <svg class="icon" width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path fill="#C563EC" d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="services_edit"  style="display: none;">
+                        <div class="services_box">
+                            <div class="flex_column">
+                                <p>
+                                    Канал
+                                </p>
+                                <input class="services_edit_input" type="text" name="" id="" value="gay">
+                            </div>
+                            <div class="flex_column">
+                                <p>
+                                    Интервал
+                                </p>
+                                <input class="services_edit_input" type="text" name="" id="" value="5">
+                            </div>
+                            <div class="flex_column">
+                                <p>
+                                    Примечание
+                                </p>
+                                <input class="services_edit_input" type="text" name="" id="" value="">
+                            </div>
+                            <div class="flex_column">
+                                <p>
+                                    Количество
+                                </p>
+                                <input class="services_edit_input" type="text" name="" id="" value="5">
+                            </div>
+                        </div>
+                        <div class="services_box">
+                            <div class="flex_column">
+                                <p>
+                                    Зрители в списке
+                                </p>
+                                <input class="services_edit_input" type="text" name="" id="" value="5">
+                            </div>
+                            <div class="flex_column">
+                                <p>
+                                    Чат аккаунты
+                                </p>
+                                <input class="services_edit_input" type="text" name="" id="" value="5">
+                            </div>
+                            <div class="flex_column">
+                                <p>
+                                    Просмотровв час
+                                </p>
+                                <input class="services_edit_input" type="text" name="" id="" value="52">
+                            </div>
+                        </div>
+                        <button class="services_svg_1">
+                            <svg width="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path fill="#fff" d="M48 96l0 320c0 8.8 7.2 16 16 16l320 0c8.8 0 16-7.2 16-16l0-245.5c0-4.2-1.7-8.3-4.7-11.3l33.9-33.9c12 12 18.7 28.3 18.7 45.3L448 416c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 96C0 60.7 28.7 32 64 32l245.5 0c17 0 33.3 6.7 45.3 18.7l74.5 74.5-33.9 33.9L320.8 84.7c-.3-.3-.5-.5-.8-.8L320 184c0 13.3-10.7 24-24 24l-192 0c-13.3 0-24-10.7-24-24L80 80 64 80c-8.8 0-16 7.2-16 16zm80-16l0 80 144 0 0-80L128 80zm32 240a64 64 0 1 1 128 0 64 64 0 1 1 -128 0z"/>
+                            </svg>
+                            Сохранить
+                        </button>
+                    </div>
+                    <div class="services_view">
+                        <div class="services_box">
+                            <p>Заказ <span>28374643</span></p>
+                            <p>Сервис  <span>Twitch | Зрители</span></p>
+                            <p>Канал <span>gay</span></p>
+                            <p>Онлайн <span>Онлайн</span></p>
+                            <p>Интервал <span>5</span></p>
+                            <p>Времени осталось <span>00:00:59s</span></p>
+                            <p>Зрители <span>0/5/5</span></p>
+                        </div>
+                        <div class="services_box">
+                            <p>Осталось смен канала <span>2</span></p>
+                            <p>Проверять онлайн   <span>Нет</span></p>
+                            <p>Зрители в списке  <span>5шт</span></p>
+                            <p>Просмотров в час <span>50шт</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    
+    <script>
+        function toggleEdit() {
+            const editDiv = document.querySelector('.services_edit');
+            if (editDiv.style.display === 'none' || editDiv.style.display === '') {
+                editDiv.style.display = 'flex';
+            } else {
+                editDiv.style.display = 'none';
+            }
+        }
+    </script>
+
+    <script>
+        function toggleServices() {
+            const svg = document.querySelector('.services_svg .icon');
+            const view = document.querySelector('.services_view');
+            
+            svg.classList.toggle('rotate');
+            view.classList.toggle('show');
+        }
+    </script>
+    <script>
+        function toggleIcon() {
+          const svg1 = document.getElementById('svg1');
+          const svg2 = document.getElementById('svg2');
+      
+          if (svg1.style.display === 'none') {
+            svg1.style.display = 'block';
+            svg2.style.display = 'none';
+          } else {
+            svg1.style.display = 'none';
+            svg2.style.display = 'block';
+          }
+        }
+    </script>
+
+</body>
+</html>
